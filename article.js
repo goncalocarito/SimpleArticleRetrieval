@@ -1,5 +1,7 @@
 var article = (function () {
 
+// highlights text
+// if you just want to retrieve comment the invocation
 function doSearch(text) {
     // from http://stackoverflow.com/a/5887719/2237234
     if (window.find && window.getSelection) {
@@ -22,7 +24,7 @@ function doSearch(text) {
 }
 
 
-var sent = document.body.innerText.split("\n").filter(function(n){ return n != "" }).filter(function(n){ if(n.indexOf('.') !== -1 || n.indexOf('?') !== -1 || n.indexOf('!') !== -1 ) return n });
+var sent = document.body.textContent.split("\n").filter(function(n){return n.match(/^[^<>\{\}_]+$/)}).filter(function(n){ if(n.indexOf('.') !== -1 || n.indexOf('?') !== -1 || n.indexOf('!') !== -1 ) return n });;
 
 for (var i in sent) {
     console.log(sent[i]);
