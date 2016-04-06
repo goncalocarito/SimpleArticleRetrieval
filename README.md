@@ -1,3 +1,3 @@
-Simple Article Retrieval
+** Simple Article Retrieval **
 
 Retrieve articles from websites.
