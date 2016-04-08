@@ -8,7 +8,7 @@ words that are being selected.
 **innerText vs textContent**
 
 Both extract text from html content but have significant differences.
-more at [Kellegous.com](https://kellegous.com/j/2013/02/27/innertext-vs-textcontent/)
+(more at [Kellegous.com](https://kellegous.com/j/2013/02/27/innertext-vs-textcontent/))
 
 `innerText` is compatible with all common browsers except Firefox 44-
 - A rule was added in this case to use `innerHTML` with regex replace.
