@@ -22,7 +22,7 @@ function doSearch(text) {
     }
 }
 
-// HTML DOM extraction
+// HTML DOM extraction to filter text in articles
 function DOMExtract(domobj){
   if ('innerText' in domobj) {
       return sent = domobj.innerText.split("\n").filter(function(n){ if(n.indexOf('.') !== -1 || n.indexOf('?') !== -1 || n.indexOf('!') !== -1 ) return n });
